@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<registry>
+
+  <records interface="plone.app.mosaic.interfaces.IFormat"
+           prefix="plone.app.mosaic.formats.post_inner_content">
+    <value key="name">post-inner-content</value>
+    <value key="category">row</value>
+    <value key="label">Container</value>
+    <value key="action">row-toggle-class</value>
+    <value key="icon">true</value>
+    <value key="favorite">false</value>
+    <value key="weight">200</value>
+  </records>
+
+  <record name="plone.app.mosaic.default_available_actions">
+    <value purge="False">
+      <element>post-inner-content</element>
+    </value>
+  </record>
+
+</registry>

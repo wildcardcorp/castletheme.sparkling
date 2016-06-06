@@ -1,0 +1,12 @@
+<aside class="widget sparkling-cats">
+  <div class="cats-widget">
+    <ul>
+      <tal:tag tal:repeat="tag python: utils.get_popular_tags(8)">
+        <li class="cat-item">
+          <a href="${portal_url}/@@search?Subject=${tag/name}"
+             title="${tag/name}">${tag/name}</a> <span>${tag/count}</span>
+        </li>
+      </tal:tag>
+    </ul>
+  </div><!-- end widget content -->
+</aside>

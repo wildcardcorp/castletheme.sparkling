@@ -1,0 +1,8 @@
+<aside class="widget widget_tag_cloud">
+  <div class="tagcloud" style="display: block;">
+    <tal:tag tal:repeat="tag python: utils.get_popular_tags(8)">
+      <a href="${portal_url}/@@search?Subject=${tag/name}" title="${tag/name}"
+         style="font-size: 8pt;">${tag/name}</a>
+    </tal:tag>
+  </div>
+</aside>

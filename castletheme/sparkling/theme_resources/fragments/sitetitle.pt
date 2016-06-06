@@ -1,0 +1,3 @@
+<h2 class="site-name">
+  <a class="navbar-brand" href="${portal_url}" tal:content="python: utils.get_registry_value('plone.site_title', 'Castle CMS')">Castle CMS</a>
+</h2>

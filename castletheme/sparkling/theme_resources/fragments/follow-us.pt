@@ -1,0 +1,39 @@
+<aside class="widget castle-social"
+       tal:define="twitter python: utils.get_registry_value('plone.twitter_username', '');
+                   facebook python: utils.get_registry_value('plone.facebook_username', '');
+                   youtube python: utils.get_registry_value('plone.youtube_channel', '');
+                   gplus python: utils.get_registry_value('plone.google_plus_username', '');
+                   github python: utils.get_registry_value('plone.github_username', '');">
+  <!-- social icons -->
+  <div class="social-icons sticky-sidebar-social">
+    <nav id="menu-social" class="social-icons">
+      <ul id="menu-social-items" class="social-menu">
+        <li class="menu-item" tal:condition="twitter">
+          <a href="https://twitter.com/${twitter}">
+            <i class="social_icon fa"><span>Twitter</span></i>
+          </a>
+        </li>
+        <li class="menu-item" tal:condition="facebook">
+          <a href="https://www.facebook.com/${facebook}">
+            <i class="social_icon fa"><span>Facebook</span></i>
+          </a>
+        </li>
+        <li class="menu-item" tal:condition="youtube">
+          <a href="${youtube}">
+            <i class="social_icon fa"><span>Youtube</span></i>
+          </a>
+        </li>
+        <li class="menu-item" tal:condition="gplus">
+          <a href="https://plus.google.com/+${gplus}">
+            <i class="social_icon fa"><span>Google+</span></i>
+          </a>
+        </li>
+        <li class="menu-item" tal:condition="github">
+          <a href="https://github.com/${github}">
+            <i class="social_icon fa"><span>Github</span></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div><!-- end social icons -->
+</aside>

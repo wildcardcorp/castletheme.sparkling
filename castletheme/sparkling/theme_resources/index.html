@@ -1,0 +1,123 @@
+<!doctype html>
+<!--[if !IE]>
+<html class="no-js non-ie" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 7 ]>
+<html class="no-js ie7" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 8 ]>
+<html class="no-js ie8" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 9 ]>
+<html class="no-js ie9" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns#"> <!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link data-tile="${portal_url}/@@castle.cms.metadata"/>
+
+  <link data-tile="${portal_url}/@@plone.app.standardtiles.stylesheets"/>
+  <link data-tile="${portal_url}/@@plone.app.standardtiles.javascripts"/>
+
+<link rel='stylesheet' id='sparkling-bootstrap-css'  href='inc/css/bootstrap.min.css?ver=4.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='sparkling-icons-css'  href='inc/css/font-awesome.min.css?ver=4.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='sparkling-fonts-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A400italic%2C400%2C600%2C700%7CRoboto+Slab%3A400%2C300%2C700&#038;ver=4.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='sparkling-style-css'  href='style.css?ver=4.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='sparkling-style-css'  href='integration.css?ver=4.5.2' type='text/css' media='all' />
+
+</head>
+
+<body class="home blog group-blog infinite-scroll">
+
+  <div data-tile="${context_url}/@@plone.app.standardtiles.toolbar" />
+
+  <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+<div id="page" class="hfeed site">
+
+	<header id="masthead" class="site-header" role="banner">
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="row">
+					<div class="site-navigation-inner col-sm-12">
+						<div class="navbar-header">
+							<button type="button" class="btn navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<div id="logo">
+								<h1 class="site-name" data-tile="${portal_url}/@@fragment?name=sitetitle">
+                  <a class="navbar-brand" href="https://colorlib.com/sparkling/" title="Sparkling" rel="home">Sparkling</a>
+								</h1>
+              </div><!-- end of #logo -->
+						</div>
+						<div class="collapse navbar-collapse navbar-ex1-collapse">
+              <ul id="menu-top" class="nav navbar-nav"
+                  data-tile="${portal_url}/@@fragment?name=mainlinks">
+                <li class="menu-item active">
+                  <a title="Home" href="https://colorlib.com/sparkling/">Home</a>
+                </li>
+                <li class="menu-item">
+                  <a title="Download" href="https://colorlib.com/wp/themes/sparkling/">Download</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+				</div>
+			</div>
+		</nav><!-- .site-navigation -->
+	</header><!-- #masthead -->
+
+	<div class="site-content">
+		<div class="top-section">
+		  <div class="container main-content-area">
+        <div class="row side-pull-left" dynamic-grid>
+          <main class="site-main content-area" role="main"
+                col-count-1="12" col-count-2="8" col-count-3="6">
+            <div class="post-inner-content">
+              ${structure: content.main}
+            </div>
+          </main>
+	        <div id="secondary"
+               class="widget-area castle-column-two
+                      ${python: '' if content['right'] else 'well'}" role="complementary"
+               col-count-1="12" col-count-2="4" col-count-3="4">
+            ${structure: content.right}
+            <div data-tile="${context_url}/@@castle.cms.meta/meta-right"></div>
+          </div>
+		    </div><!-- close .row -->
+	   </div><!-- close .container -->
+   </div><!-- close .site-content -->
+
+	<div id="footer-area">
+		<div class="container footer-inner">
+			<div class="row">
+      	<div class="footer-widget-area">
+  				<div class="col-sm-4 footer-widget" role="complementary">
+            <div data-tile="${context_url}/@@castle.cms.meta/meta-footer-left"></div>
+		      </div>
+				  <div class="col-sm-4 footer-widget" role="complementary">
+            <div data-tile="${context_url}/@@castle.cms.meta/meta-footer-middle"></div>
+          </div>
+				  <div class="col-sm-4 footer-widget" role="complementary">
+            <div data-tile="${context_url}/@@castle.cms.meta/meta-footer-right"></div>
+			    </div>
+			  </div>
+      </div>
+		</div>
+
+		<footer id="colophon" class="site-footer" role="contentinfo">
+			<div class="site-info container">
+				<div class="row">
+          <div data-tile="${context_url}/@@castle.cms.meta/meta-colophon"></div>
+				</div>
+			</div><!-- .site-info -->
+		</footer><!-- #colophon -->
+	</div>
+</div><!-- #page -->
+
+<div data-tile="${context_url}/@@plone.app.standardtiles.analytics" />
+
+</body>
+</html>
