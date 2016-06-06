@@ -72,12 +72,18 @@
 	<div class="site-content">
 		<div class="top-section">
 		  <div class="container main-content-area">
+
+        <div data-tile="${context_url}/@@plone.app.standardtiles.global_statusmessage"></div>
+        <div data-tile="${context_url}/@@plone.app.standardtiles.lockinfo"></div>
+        <div data-tile="${context_url}/@@plone.app.standardtiles.viewletmanager/below-content?manager=plone.abovecontentbody"></div>
+
         <div class="row side-pull-left" dynamic-grid>
           <main class="site-main content-area" role="main"
                 col-count-1="12" col-count-2="8" col-count-3="6">
             <div class="post-inner-content">
               ${structure: content.main}
             </div>
+            <div data-tile="${context_url}/@@plone.app.standardtiles.discussion"></div>
           </main>
 	        <div id="secondary"
                class="widget-area castle-column-two
