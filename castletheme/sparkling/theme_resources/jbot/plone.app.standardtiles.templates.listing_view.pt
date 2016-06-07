@@ -24,7 +24,7 @@
                              hasImage python: utils.has_image(item);">
               <div class="post-image" tal:condition="hasImage">
                 <a href="${item_url}">
-                  <img src="${item/getURL}/@@images/image/mini">
+                  <div tal:replace="structure python: utils.focal_image_tag(item, 'mini')" />
                 </a>
               </div>
               <div class="post-content">
@@ -38,6 +38,7 @@
         </div>
         </aside>
       </tal:listing>
+      <div class="visualClear"> </div>
       <p class="discreet"
          tal:condition="not:results"
          i18n:translate="">
