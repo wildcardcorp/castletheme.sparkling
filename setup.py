@@ -1,25 +1,24 @@
 from setuptools import setup, find_packages
-import os
 
-version = '1.0.0'
+version = '1.0.1.dev0'
 
 setup(name='castletheme.sparkling',
       version=version,
-      description="Wordpress Sparkling theme fork",
-      long_description=open("README.rst").read() + "\n" +
-                       open("HISTORY.rst").read(),
-      # Get more strings from
-      # http://pypi.python.org/pypi?%3Aaction=list_classifiers
+      description="Implementation of the WordPress Sparkling theme for CastleCMS",
+      long_description=open("README.md").read() + "\n" + open("CHANGELOG.md").read(),
       classifiers=[
         "Framework :: Plone",
+        "Framework :: Plone :: 5.0",
         "Programming Language :: Python",
+        "Programming Language :: Python :: 2.7",
         "Topic :: Software Development :: Libraries :: Python Modules",
+        "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
         ],
-      keywords='',
-      author='',
-      author_email='',
-      url='http://svn.plone.org/svn/collective/',
-      license='GPL',
+      keywords='castlecms plone theme',
+      author='Wildcard Corp.',
+      author_email='corporate@wildcardcorp.com',
+      url='https://www.wildcardcorp.com',
+      license='GPLv3+',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['castletheme'],
       include_package_data=True,
