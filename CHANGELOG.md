@@ -6,7 +6,6 @@ Changes for castletheme.sparkling
 ------------------
 
 - packaging updates
-- flake8
 
 
 1.0.0 (2016-06-07)
