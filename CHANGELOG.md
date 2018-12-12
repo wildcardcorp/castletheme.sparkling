@@ -2,7 +2,7 @@ Changes for castletheme.sparkling
 =================================
 
 
-1.0.1 (unreleased)
+1.0.1 (2018-12-12)
 ------------------
 
 - packaging updates
