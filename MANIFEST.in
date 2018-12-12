@@ -1,0 +1,18 @@
+include *.md
+include *.txt
+recursive-include castletheme *.cfg
+recursive-include castletheme *.css
+recursive-include castletheme *.eot
+recursive-include castletheme *.html
+recursive-include castletheme *.js
+recursive-include castletheme *.less
+recursive-include castletheme *.map
+recursive-include castletheme *.otf
+recursive-include castletheme *.php
+recursive-include castletheme *.pt
+recursive-include castletheme *.svg
+recursive-include castletheme *.ttf
+recursive-include castletheme *.woff
+recursive-include castletheme *.woff2
+recursive-include castletheme *.xml
+recursive-include castletheme *.zcml
