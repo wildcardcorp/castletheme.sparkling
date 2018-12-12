@@ -5,7 +5,7 @@ Changes for castletheme.sparkling
 1.0.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- update setup.py description content types
 
 
 1.0.1 (2018-12-12)

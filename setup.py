@@ -5,7 +5,9 @@ version = '1.0.2.dev0'
 setup(name='castletheme.sparkling',
       version=version,
       description="Implementation of the WordPress Sparkling theme for CastleCMS",
+      description_content_type='text/markdown',
       long_description=open("README.md").read() + "\n" + open("CHANGELOG.md").read(),
+      long_description_content_type='text/markdown',
       classifiers=[
         "Framework :: Plone",
         "Framework :: Plone :: 5.0",
