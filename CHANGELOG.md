@@ -2,7 +2,7 @@ Changes for castletheme.sparkling
 =================================
 
 
-1.0.4 (unreleased)
+1.0.4 (2018-12-12)
 ------------------
 
 - further presentation tweaks for github/pypi
