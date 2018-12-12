@@ -1,26 +1,21 @@
-Changes for castletheme.sparkling
-=================================
+## Changes for castletheme.sparkling
 
 
-1.0.3 (unreleased)
-------------------
+### 1.0.3 (unreleased)
 
-- Nothing changed yet.
+- style tweaks for github and pypi presentation
 
 
-1.0.2 (2018-12-12)
-------------------
+### 1.0.2 (2018-12-12)
 
 - update setup.py description content types
 
 
-1.0.1 (2018-12-12)
-------------------
+### 1.0.1 (2018-12-12)
 
 - packaging updates
 
 
-1.0.0 (2016-06-07)
-------------------
+### 1.0.0 (2016-06-07)
 
 - initial release
